@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200&display=swap');
+
+:root{
+
+--Orange-color:hsl(0, 100%, 74%); 
+--Green-color:hsl(154, 59%, 51%);
+--Blue-color:hsl(248, 32%, 49%);
+--Dark-Blue-color:hsl(249, 10%, 26%); 
+--Grayish-Blue-color: hsl(246, 25%, 77%);
+}
+
+
 body{
-background-color:hsl(0, 100%, 74%);
+background-color:var(--Orange-color);
 background-image: url("./images/bg-intro-desktop.png");
+
 }
 
 
@@ -8,14 +21,15 @@ body h1{
 width: 30%;
 padding: 40px;
 color: #FFFFFF;
-font-size: 60px;
+font-family: 'Poppins', sans-serif;
+font-size: 50px;
 position:absolute;
 left:160px;
 top:200px;
 
 }
 body p{
-font-size: 20px;
+font-size: 16px;
 
 }
 body h3 {
@@ -72,7 +86,7 @@ color: hsl(228, 45%, 44%);
 }
 
 .botao{
-background:hsl(154, 59%, 51%);
+background:var(--Green-color);
 border-color:hsl(154, 59%, 51%);
 color:white;
 font-size:20px;

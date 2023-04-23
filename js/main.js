@@ -1,21 +1,31 @@
 const formulario = document.getElementsByClassName("formulario");
 const enviar = document.getElementById("botao");
-const descricao = document.getElementById("descricao");
+const descricao = document.querySelectorAll(".descricao");
 
 enviar.addEventListener("click",(even) => {
 
-console.log(even.target.form.id = descricao[0]);
-console.log(even.target.form);
-//console.log(even.target.form.id = descricao[1])
-//console.log(even.target.form.id = descricao[2])
-//console.log(even.target.form.id = descricao[3])
 
-//if(even.target.form.id = descricao[0] == '') {descricao.innerHTML = "vazio"}
+nome = even.target.form[0].value
+ultimoNome = even.target.form[1].value
+email = even.target.form[2].value
+Password = even.target.form[3].value
 
-//even.target.form.id = descricao[1])
-//even.target.form.id = descricao[2])
-//even.target.form.id = descricao[3])
 
-//even.target.form
+if (nome === ''){descricao1.innerHTML = "First Name cannot be empty"}else{descricao1.innerHTML = ""};
+if (ultimoNome === ''){descricao2.innerHTML = "Last Name cannot be empty"}else{descricao2.innerHTML = ""};
+if (email === ''){descricao3.innerHTML = "Looks like this is not an email"}else{descricao3.innerHTML = ""};
+if (Password === ''){descricao4.innerHTML = "Password cannot be empty"}else{descricao4.innerHTML = ""};
+
 
 })
+
+
+
+
+
+
+
+
+
+
+
